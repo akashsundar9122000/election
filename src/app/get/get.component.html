@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="center">
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card">
+        <div class="card-image">
+          <img [src]="result.image" alt={{result.party}}>
+        </div>
+        <div class="card-content">
+          <p><span style="font-weight: bold;">Candidate Name: </span>{{result.candi}}</p>
+          <p><span style="font-weight: bold;">Party Name: </span>{{result.party}}</p>
+        </div>
+      </div>
+      <p>Are you sure you want to vote for this candidate?</p>
+      <button class="btn waves-effect waves-light" type="submit" routerLink="/thanks" name="action">Vote
+        <i class="material-icons right">done</i>
+      </button>
+      <button class="btn waves-effect waves-light red" style="margin-left: 10px;" routerLink="/display" name="action">No
+        <i class="material-icons right">cancel</i>
+      </button>
+  </div>
+</div>
+</div>

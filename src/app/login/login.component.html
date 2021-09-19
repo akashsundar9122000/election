@@ -1,0 +1,14 @@
+<div class="image">
+<div class="wrapper">
+  <div class="title">Login Form</div>
+  <form (ngSubmit)="onLogin(formData)" #formData="ngForm">
+    <div class="field">
+      <input type="number" required  ngModel name="aadhar">
+      <label>Aadhar Number</label>
+    </div>
+    <div class="field">
+      <input type="submit" value="Login">
+    </div>
+  </form>
+</div>
+</div>
